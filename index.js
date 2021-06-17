@@ -7,6 +7,8 @@ const app = express();
 
 const MONGOOSE_OPTS = { useNewUrlParser: true, useUnifiedTopology: true }
 
+/* Just adding this for test */
+
 mongoose.connect('mongodb://localhost/users', MONGOOSE_OPTS)
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.error('Could not connect to MongoDB...'));
